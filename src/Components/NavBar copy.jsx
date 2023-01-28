@@ -1,6 +1,7 @@
 import React from "react";
 import CartWidget from "./CartWidget";
 import Account from "./Account";
+import SeachBar from "./SeachBar";
 import {
   HamburgerIcon,
   AddIcon,
@@ -56,6 +57,7 @@ const NavBarCopy = () => {
         <Menu>
           <MenuButton
             marginLeft="30px"
+            marginRight="0px"
             as={Button}
             rightIcon={<ChevronDownIcon />}
             color="white"
@@ -81,7 +83,7 @@ const NavBarCopy = () => {
           <Box as="ul" color="white" listStyleType="none">
             <Button
               color="white"
-              marginLeft="10px"
+              marginLeft="0px"
               variant="ghost"
               height="2em"
               width="auto"
@@ -92,7 +94,7 @@ const NavBarCopy = () => {
               Ofertas
             </Button>
             <Button
-              marginLeft="15px"
+              marginLeft="5px"
               color="white"
               variant="ghost"
               height="2em"
@@ -104,7 +106,7 @@ const NavBarCopy = () => {
               Nuevos ingresos
             </Button>
             <Button
-              marginLeft="15px"
+              marginLeft="5px"
               color="white"
               variant="ghost"
               height="2em"
@@ -119,20 +121,8 @@ const NavBarCopy = () => {
         </Flex>
 
         <Spacer />
-        <Box>
-        <InputGroup>
-          <Input
-            placeholder="Buscar Producto..."
-            borderRadius="full"
-            bg="#f5f7f9"
-            variant="filled"
-            w="20rem"
-            height="auto"
-            _focus={{ bg: "gray.200" }}
-          />
-          <InputRightElement children={<SearchIcon />} />
-        </InputGroup>
-        </Box>
+
+        <SeachBar />
 
         {/* Agrego sección de perfil*/}
         <Button
