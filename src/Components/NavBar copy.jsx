@@ -30,7 +30,7 @@ import {
   InputGroup,
   InputRightElement,
 } from "@chakra-ui/react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/paw.png";
 
 const NavBarCopy = () => {
   return (
@@ -45,7 +45,7 @@ const NavBarCopy = () => {
       >
         {/* Agrego Logo*/}
         <Heading size="md" marginLeft="20px">
-          <Image src={Logo} alt="logo" width="40px" height="30px" />
+          <Image src={Logo} alt="logo" width="60px" height="50px" />
         </Heading>
 
         {/* Agrego Brand*/}
