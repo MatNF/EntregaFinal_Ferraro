@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: black;
+    border: 1px solid black;
+    height: 300px;
+    width: 200px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.quantity-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0.5em 0em;
+
+    border: 1px solid rgb(70, 69, 69);
+    color: black;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.quantity-desc span {
+    /* border: 1px solid rgb(70, 69, 69);
+    color: black; */
+    width: 120px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.addCarrito {
+    border: 1px solid black;
+    margin-bottom: 1em;
+    /* margin-top: 1em; */
+    width: 120px;
+    box-sizing: border-box;
+    font-size: 9pt;
+    border-color: rgb(43, 201, 170);
+    color: rgb(43, 201, 170);
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+.incdec_button {
+    color: rgb(43, 201, 170)
+}
+
+.container h1 {    
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.container h3 {
+    font-weight: bold;
+}
+
+.imagen-card {
+    width: 175px;
+    margin-bottom: 0.5rem;
+}
+
+.contStock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 120px;
+    margin-bottom: 0.5em;    
+    font-size: small;
+}
+
+.contStock span:first-child {
+        font-weight: bold;
+        margin-right: 0.5em;
+}
