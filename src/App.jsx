@@ -8,6 +8,7 @@ import SeachBar from "./Components/SeachBar";
 function App() {
   return (
     <>
+    {/* <ItemCount/> */}
       <ItemListContainer />
       {/* <NavBarCopy />
       <ItemListContainer greeting="Bienvenido a mi sitio web" /> */}

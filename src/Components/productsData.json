@@ -1,0 +1,24 @@
+{"products": [
+    {
+      "id": 1,
+      "title": "iPhone 13 256GB -Starlight",
+      "description": "Stunning Starlight iPhone 13 with 256GB storage.",
+      "price": 20,
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23766-large_default/iphone-13-128gb-starlight.jpg"
+    },
+    {
+      "id": 2,
+      "title": "iPhone 13 Pro 128GB - Gold",
+      "description": "Elegant Gold iPhone 13 Pro with 128GB storage.",
+      "price": 25,
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/22595-large_default/iphone-13-pro-256gb-gold.jpg"
+    },
+    {
+      "id": 3,
+      "title": "iPhone 13 Pro 256GB-Silver",
+      "description": "Powerful Silver iPhone 13 Pro with 256GB storage.",
+      "price": 30,
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/22574-large_default/iphone-13-pro-256gb-silver.jpg"
+    }
+]
+}

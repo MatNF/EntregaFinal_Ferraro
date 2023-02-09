@@ -3,18 +3,22 @@ import React from "react";
 const Item = ({ item }) => {
   return (
     <div className="counter">
+      <div className="imagenProducto">
+        <img src={item.pictureUrl} alt={item.title} />
+      </div>
       <div className="infoProducto">
         <div className="titleProd">
           <h3>{item.title}</h3>
         </div>
         <div className="moreInfo">
           <p>{item.description}</p>
-          <p>Price: ${item.price}</p>
+          <div className="itemDetailPrice">
+            <p>${item.price}</p>
+          </div>
         </div>
-      </div>
-
-      <div className="imagenProducto">
-        <img src={item.pictureUrl} alt={item.title} />
+        <div className="buttonFrame">
+          <button className="buttonDetails btn-4">Details</button>
+        </div>
       </div>
     </div>
   );
