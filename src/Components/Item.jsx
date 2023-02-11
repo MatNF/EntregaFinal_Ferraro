@@ -1,4 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Flex,
+  Spacer,
+  Box,
+  Heading,
+  Button,
+  Image,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+} from "@chakra-ui/react";
 
 const Item = ({ item }) => {
   return (
@@ -17,7 +30,11 @@ const Item = ({ item }) => {
           </div>
         </div>
         <div className="buttonFrame">
-          <button className="buttonDetails btn-4">Details</button>
+          <Menu>
+            <Link to={"/detalle"}>
+              <button className="buttonDetails btn-4">Details</button>
+            </Link>
+          </Menu>
         </div>
       </div>
     </div>

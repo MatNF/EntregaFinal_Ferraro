@@ -1,17 +1,22 @@
 import React from "react";
-import CartWidget from "./Components/CartWidget";
-import ItemCount from "./Components/ItemCount";
-import ItemListContainer from "./Components/ItemListContainer";
 import NavBarCopy from "./Components/NavBar copy";
-import SeachBar from "./Components/SeachBar";
+import ItemListContainer from "./Components/ItemListContainer";
+import ItemDetailContainer from "./Components/ItemDetailContainer";
+import Cart from "./Components/Cart";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-    {/* <ItemCount/> */}
-      <ItemListContainer />
-      {/* <NavBarCopy />
-      <ItemListContainer greeting="Bienvenido a mi sitio web" /> */}
+      <BrowserRouter>
+        <NavBarCopy />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/categoria" element={<ItemListContainer />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/detalle" element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

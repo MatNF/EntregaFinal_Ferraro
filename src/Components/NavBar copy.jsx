@@ -2,17 +2,8 @@ import React from "react";
 import CartWidget from "./CartWidget";
 import Account from "./Account";
 import SeachBar from "./SeachBar";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import {
-  HamburgerIcon,
-  AddIcon,
-  ExternalLinkIcon,
-  RepeatIcon,
-  EditIcon,
-  ChevronDownIcon,
-  SearchIcon,
-} from "@chakra-ui/icons";
-import {
-  Container,
   Flex,
   Spacer,
   Box,
@@ -23,14 +14,10 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  Circle,
-  Center,
-  Text,
-  Input,
-  InputGroup,
-  InputRightElement,
 } from "@chakra-ui/react";
 import Logo from "../assets/paw.png";
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBarCopy = () => {
   return (
@@ -81,18 +68,22 @@ const NavBarCopy = () => {
 
         <Flex>
           <Box as="ul" color="white" listStyleType="none">
-            <Button
-              color="white"
-              marginLeft="0px"
-              variant="ghost"
-              height="2em"
-              width="auto"
-              padding="auto"
-              _hover={{ variant: "outline", bg: "#4faabf" }}
-              _active={{ bg: "#4faabf" }}
-            >
-              Ofertas
-            </Button>
+            <Menu>
+              <Link to={"/cart"}>
+                <Button
+                  color="white"
+                  marginLeft="0px"
+                  variant="ghost"
+                  height="2em"
+                  width="auto"
+                  padding="auto"
+                  _hover={{ variant: "outline", bg: "#4faabf" }}
+                  _active={{ bg: "#4faabf" }}
+                >
+                  Ofertas
+                </Button>
+              </Link>
+            </Menu>
             <Button
               marginLeft="5px"
               color="white"
