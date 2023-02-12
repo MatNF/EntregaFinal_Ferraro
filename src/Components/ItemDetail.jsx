@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ItemCountCopy from "./ItemCountCopy";
+import ItemCount from "./ItemCount";
 import "./styles/hola.css";
 
 const ItemDetail = ({ data }) => {
@@ -22,7 +22,7 @@ const ItemDetail = ({ data }) => {
             <p>${data.price}</p>
           </div>
           <h3>Cantidad</h3>
-          <ItemCountCopy initial={1} stock={data.stock} onAdd={onAdd} />
+          <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
         </div>
       </div>
     </>

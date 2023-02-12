@@ -4,7 +4,6 @@ import ItemListContainer from "./Components/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailContainer";
 import Cart from "./Components/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ItemCountCopy from "./Components/ItemCountCopy";
 
 function App() {
   return (

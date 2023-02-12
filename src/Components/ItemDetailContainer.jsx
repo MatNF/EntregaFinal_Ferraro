@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import productsData from "./productsData.json";
-import ItemCountCopy from "./ItemCountCopy";
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});

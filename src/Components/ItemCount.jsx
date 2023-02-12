@@ -5,7 +5,7 @@ import {
 } from "react-icons/ai";
 import "./styles/hola.css";
 
-const ItemCountCopy = ({ initial, stock, onAdd }) => {
+const ItemCount = ({ initial, stock, onAdd }) => {
   const [count, setCount] = useState(parseInt(initial));
 
   const decrease = () => {
@@ -47,4 +47,4 @@ const ItemCountCopy = ({ initial, stock, onAdd }) => {
   );
 };
 
-export default ItemCountCopy;
+export default ItemCount;

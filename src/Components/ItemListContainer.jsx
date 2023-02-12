@@ -3,12 +3,8 @@ import "./styles/ItemListContainer.css"; // Importa el archivo de estilos
 import ItemList from "./ItemList";
 import productsData from "./productsData.json";
 import { useParams } from "react-router-dom";
-import ItemCountCopy from "./ItemCountCopy";
 
 const ItemListContainer = (props) => {
-  const onAdd = (quantity) => {
-    console.log(`compraste ${quantity} unidades`);
-  };
 
   const [items, setItems] = useState([]);
 
@@ -36,7 +32,6 @@ const ItemListContainer = (props) => {
       ) : (
         <ItemList items={items} />
       )}
-      <ItemCountCopy initial={1} stock={5} onAdd={onAdd} />
     </>
   );
 };
