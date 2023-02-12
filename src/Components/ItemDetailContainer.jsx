@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
-
-const product = {
-  id: 1,
-  title: "iPhone 13 256GB -Starlight",
-  description: "Stunning Starlight iPhone 13 with 256GB storage.",
-  price: 20,
-  pictureUrl:
-    "https://cdn-ipoint.waugi.com.ar/23766-large_default/iphone-13-128gb-starlight.jpg",
-};
+import { useParams } from "react-router-dom";
+import productsData from "./productsData.json";
+import ItemCountCopy from "./ItemCountCopy";
 
 const ItemDetailContainer = () => {
-  const [detailData, setDetailData] = useState([]);
+  const [data, setData] = useState({});
+
+  const { detalleId } = useParams();
 
   useEffect(() => {
-    const getItem = new Promise((resolve) => {
+    const getData = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(product);
-      }, 3000);
+        resolve(productsData);
+      }, 2000);
     });
 
-    getItem.then((res) => setDetailData(res));
+    getData.then((res) =>
+      setData(
+        res.find((productsData) => productsData.id === parseInt(detalleId))
+      )
+    );
   }, []);
 
   return (
-    <div>
-      <ItemDetail data={detailData} />
-    </div>
+    <>
+      <ItemDetail data={data} />
+    </>
   );
 };
 

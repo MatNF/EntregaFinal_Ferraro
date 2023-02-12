@@ -1,58 +1,28 @@
 import React, { useState } from "react";
-import {
-  AiOutlineMinus,
-  AiOutlinePlus,
-  AiFillStar,
-  AiOutlineStar,
-} from "react-icons/ai";
+import ItemCountCopy from "./ItemCountCopy";
 import "./styles/hola.css";
-import headset from "../assets/headset.png";
 
 const ItemDetail = ({ data }) => {
-  var initialCount = 1;
-  var stockInicial = 5;
-
-  const [count, setCount] = useState(initialCount);
-  const [stock, setStock] = useState(stockInicial);
-
-  const decrement = () => {
-    if (count > 1) {
-      setCount((prevCount) => prevCount - 1);
-    }
+  const onAdd = (quantity) => {
+    console.log(`agregaste ${quantity} unidades al carrito`);
   };
-
-  const increment = () => {
-    if (count < stock) {
-      setCount((prevCount) => prevCount + 1);
-    }
-  };
-
   //COMIENZA LA FUNCION
   return (
     <>
       <div className="container">
-        <h1>{data.title}</h1>
-
         <div className="quantity">
           <div className="divImagen">
             <img className="imagen-card" src={data.pictureUrl} />
           </div>
-          <h3>Cantidad</h3>
-
-          <p className="quantity-desc">
-            <span className="minus" onClick={decrement}>
-              <AiOutlineMinus className="incdec_button" />
-            </span>
-            <span className="num">{count}</span>
-            <span className="plus" onClick={increment}>
-              <AiOutlinePlus className="incdec_button" />
-            </span>
-          </p>
-          <div className="contStock">
-            <span>Disponibles:</span>
-            <span>{stock}</span>
+          <h1>{data.title}</h1>
+          <div className="moreInfo">
+            <p>{data.description}</p>
           </div>
-          <button className="addCarrito">Agregar al carrito</button>
+          <div className="itemDetailPrice">
+            <p>${data.price}</p>
+          </div>
+          <h3>Cantidad</h3>
+          <ItemCountCopy initial={1} stock={data.stock} onAdd={onAdd} />
         </div>
       </div>
     </>

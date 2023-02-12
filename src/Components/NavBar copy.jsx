@@ -32,7 +32,9 @@ const NavBarCopy = () => {
       >
         {/* Agrego Logo*/}
         <Heading size="md" marginLeft="20px">
-          <Image src={Logo} alt="logo" width="60px" height="50px" />
+          <Link to={"/"}>
+            <Image src={Logo} alt="logo" width="60px" height="50px" />
+          </Link>
         </Heading>
 
         {/* Agrego Brand*/}
@@ -57,57 +59,65 @@ const NavBarCopy = () => {
             Categorías
           </MenuButton>
           <MenuList>
-            <MenuItem minH="48px" color="black">
-              <span>Categoría 1</span>
-            </MenuItem>
-            <MenuItem minH="40px" color="black">
-              <span>Categoría 2</span>
-            </MenuItem>
+            <NavLink to={"/categoria/iPhone"}>
+              <MenuItem minH="48px" color="black">
+                <span>iPhone</span>
+              </MenuItem>
+            </NavLink>
+            <NavLink to={"/categoria/iPad"}>
+              <MenuItem minH="40px" color="black">
+                <span>iPad</span>
+              </MenuItem>
+            </NavLink>
           </MenuList>
         </Menu>
 
+        {/* Agrego campos de linkeo */}
+
         <Flex>
           <Box as="ul" color="white" listStyleType="none">
-            <Menu>
-              <Link to={"/cart"}>
-                <Button
-                  color="white"
-                  marginLeft="0px"
-                  variant="ghost"
-                  height="2em"
-                  width="auto"
-                  padding="auto"
-                  _hover={{ variant: "outline", bg: "#4faabf" }}
-                  _active={{ bg: "#4faabf" }}
-                >
-                  Ofertas
-                </Button>
-              </Link>
-            </Menu>
-            <Button
-              marginLeft="5px"
-              color="white"
-              variant="ghost"
-              height="2em"
-              width="auto"
-              padding="auto"
-              _hover={{ variant: "outline", bg: "#4faabf" }}
-              _active={{ bg: "#4faabf" }}
-            >
-              Nuevos ingresos
-            </Button>
-            <Button
-              marginLeft="5px"
-              color="white"
-              variant="ghost"
-              height="2em"
-              width="auto"
-              padding="auto"
-              _hover={{ variant: "outline", bg: "#4faabf" }}
-              _active={{ bg: "#4faabf" }}
-            >
-              Blog
-            </Button>
+            <NavLink to={"/"}>
+              <Button
+                color="white"
+                marginLeft="0px"
+                variant="ghost"
+                height="2em"
+                width="auto"
+                padding="auto"
+                _hover={{ variant: "outline", bg: "#4faabf" }}
+                _active={{ bg: "#4faabf" }}
+              >
+                Ofertas
+              </Button>
+            </NavLink>
+            <NavLink to={"/"}>
+              <Button
+                marginLeft="5px"
+                color="white"
+                variant="ghost"
+                height="2em"
+                width="auto"
+                padding="auto"
+                _hover={{ variant: "outline", bg: "#4faabf" }}
+                _active={{ bg: "#4faabf" }}
+              >
+                Nuevos ingresos
+              </Button>
+            </NavLink>
+            <NavLink to={"/"}>
+              <Button
+                marginLeft="5px"
+                color="white"
+                variant="ghost"
+                height="2em"
+                width="auto"
+                padding="auto"
+                _hover={{ variant: "outline", bg: "#4faabf" }}
+                _active={{ bg: "#4faabf" }}
+              >
+                Blog
+              </Button>
+            </NavLink>
           </Box>
         </Flex>
 
@@ -133,22 +143,24 @@ const NavBarCopy = () => {
         </Button>
 
         {/* Agrego boton de icono de carrito CartWidget */}
-        <Button
-          rounded="11"
-          color="white"
-          marginLeft="10px"
-          marginRight="20px"
-          // bg="#0088a9"
-          variant="ghost"
-          variantcolor="#0088a9"
-          _hover={{ bg: "#4faabf" }}
-          size="md"
-          height="2em"
-          width="5em"
-        >
-          <CartWidget />
-          Cart
-        </Button>
+        <NavLink to={"/cart"}>
+          <Button
+            rounded="11"
+            color="white"
+            marginLeft="10px"
+            marginRight="20px"
+            // bg="#0088a9"
+            variant="ghost"
+            variantcolor="#0088a9"
+            _hover={{ bg: "#4faabf" }}
+            size="md"
+            height="2em"
+            width="5em"
+          >
+            <CartWidget />
+            Cart
+          </Button>
+        </NavLink>
       </Flex>
     </>
   );

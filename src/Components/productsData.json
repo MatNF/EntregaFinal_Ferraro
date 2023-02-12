@@ -1,24 +1,47 @@
-{"products": [
+[
     {
       "id": 1,
       "title": "iPhone 13 256GB -Starlight",
       "description": "Stunning Starlight iPhone 13 with 256GB storage.",
       "price": 20,
-      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23766-large_default/iphone-13-128gb-starlight.jpg"
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23766-large_default/iphone-13-128gb-starlight.jpg",
+      "category": "iPhone",
+      "stock":4
     },
     {
       "id": 2,
       "title": "iPhone 13 Pro 128GB - Gold",
       "description": "Elegant Gold iPhone 13 Pro with 128GB storage.",
       "price": 25,
-      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/22595-large_default/iphone-13-pro-256gb-gold.jpg"
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/22595-large_default/iphone-13-pro-256gb-gold.jpg",
+      "category": "iPhone",
+      "stock":9
     },
     {
       "id": 3,
       "title": "iPhone 13 Pro 256GB-Silver",
       "description": "Powerful Silver iPhone 13 Pro with 256GB storage.",
       "price": 30,
-      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/22574-large_default/iphone-13-pro-256gb-silver.jpg"
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/22574-large_default/iphone-13-pro-256gb-silver.jpg",
+      "category": "iPhone",
+      "stock":15
+    },
+    {
+      "id": 4,
+      "title": "iPad 10.2' Wi-Fi + Cellular 256GB (9na Gen) - Silver",
+      "description": "Powerful Silver iPad 13 with 256GB storage.",
+      "price": 40,
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/22151-large_default/11-inch-ipad-pro-wi-fi-128gb-silver.jpg",
+      "category": "iPad",
+      "stock":20
+    },
+    {
+      "id": 5,
+      "title": "iPad Air 10.9' WiFi + Cell 4G 64GB (4ta Gen)-Space Grey",
+      "description": "Powerful Space Grey iPad Air with 64GB storage.",
+      "price": 50,
+      "pictureUrl": "https://cdn-ipoint.waugi.com.ar/20994-large_default/109-inch-ipad-air-wi-fi-cellular-64gb-space-grey.jpg",
+      "category": "iPad",
+      "stock":50
     }
 ]
-}

@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: white;
   height: 100vh;
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
 .quantity {
@@ -13,8 +13,8 @@
   justify-content: flex-end;
   color: black;
   border: 1px solid black;
-  height: 300px;
-  width: 200px;
+  height: auto;
+  width: 300px;
   align-self: center;
   border-radius: 5px;
 }
@@ -65,6 +65,7 @@
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .container h3 {

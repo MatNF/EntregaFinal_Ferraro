@@ -4,6 +4,7 @@ import ItemListContainer from "./Components/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailContainer";
 import Cart from "./Components/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemCountCopy from "./Components/ItemCountCopy";
 
 function App() {
   return (
@@ -12,9 +13,9 @@ function App() {
         <NavBarCopy />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
-          <Route path="/categoria" element={<ItemListContainer />} />
+          <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/detalle" element={<ItemDetailContainer />} />
+          <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
     </>

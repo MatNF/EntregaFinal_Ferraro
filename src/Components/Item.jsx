@@ -1,17 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Flex,
-  Spacer,
-  Box,
-  Heading,
-  Button,
-  Image,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-} from "@chakra-ui/react";
+import { Menu } from "@chakra-ui/react";
 
 const Item = ({ item }) => {
   return (
@@ -31,7 +20,7 @@ const Item = ({ item }) => {
         </div>
         <div className="buttonFrame">
           <Menu>
-            <Link to={"/detalle"}>
+            <Link to={`/detalle/${item.id}`}>
               <button className="buttonDetails btn-4">Details</button>
             </Link>
           </Menu>
