@@ -16,6 +16,7 @@ import {
   MenuItem,
 } from "@chakra-ui/react";
 import Logo from "../assets/paw.png";
+import appleangel from "../assets/appleAngel.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
@@ -28,20 +29,21 @@ const NavBarCopy = () => {
         align="center"
         // justify="center"
         gap="2"
-        bg="#24252a"
+        bg="black"
       >
         {/* Agrego Logo*/}
         <Heading size="md" marginLeft="20px">
           <Link to={"/"}>
-            <Image src={Logo} alt="logo" width="60px" height="50px" />
+            <Image src={appleangel} alt="logo" width="60px" height="auto" />
           </Link>
         </Heading>
 
         {/* Agrego Brand*/}
+        <Link to={"/"}>
         <Heading color="white" size="md">
-          Pawsitively
+          iMiracle
         </Heading>
-
+</Link>
         {/* Agrego campo de categorías */}
         <Menu>
           <MenuButton
@@ -56,7 +58,7 @@ const NavBarCopy = () => {
             _hover={{ variant: "outline", bg: "#4faabf" }}
             _active={{ bg: "#4faabf" }}
           >
-            Categorías
+            Productos
           </MenuButton>
           <MenuList>
             <NavLink to={"/categoria/iPhone"}>
@@ -67,6 +69,26 @@ const NavBarCopy = () => {
             <NavLink to={"/categoria/iPad"}>
               <MenuItem minH="40px" color="black">
                 <span>iPad</span>
+              </MenuItem>
+            </NavLink>
+            <NavLink to={"/categoria/Mac"}>
+              <MenuItem minH="48px" color="black">
+                <span>Mac</span>
+              </MenuItem>
+            </NavLink>
+            <NavLink to={"/categoria/Watch"}>
+              <MenuItem minH="48px" color="black">
+                <span>Watch</span>
+              </MenuItem>
+            </NavLink>
+            <NavLink to={"/categoria/EarPods"}>
+              <MenuItem minH="48px" color="black">
+                <span>EarPods</span>
+              </MenuItem>
+            </NavLink>
+            <NavLink to={"/categoria/HomePod"}>
+              <MenuItem minH="48px" color="black">
+                <span>HomePod</span>
               </MenuItem>
             </NavLink>
           </MenuList>
@@ -129,17 +151,17 @@ const NavBarCopy = () => {
         <Button
           rounded="11"
           color="white"
-          marginLeft="10px"
+          // marginLeft="10px"
           // bg="#0088a9"
           variant="ghost"
           variantcolor="#0088a9"
           _hover={{ bg: "#4faabf" }}
           size="md"
-          height="2em"
-          width="6.5em"
+          // height="2em"
+          // width="6.5em"
         >
           <Account />
-          Account
+          {/* Account */}
         </Button>
 
         {/* Agrego boton de icono de carrito CartWidget */}
@@ -147,18 +169,18 @@ const NavBarCopy = () => {
           <Button
             rounded="11"
             color="white"
-            marginLeft="10px"
-            marginRight="20px"
+            // marginLeft="10px"
+            marginRight="10px"
             // bg="#0088a9"
             variant="ghost"
             variantcolor="#0088a9"
             _hover={{ bg: "#4faabf" }}
             size="md"
-            height="2em"
-            width="5em"
+            // height="2em"
+            // width="5em"
           >
             <CartWidget />
-            Cart
+            {/* Cart */}
           </Button>
         </NavLink>
       </Flex>
