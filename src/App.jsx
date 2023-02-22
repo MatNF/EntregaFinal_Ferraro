@@ -6,6 +6,8 @@ import Cart from "./Components/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HeroBanner from "./Components/HeroBanner";
 import NewCard from "./Components/NewCard";
+import FooterBanner from "./Components/FooterBanner";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <>
               <HeroBanner />
               <ItemListContainer />
+              <FooterBanner/>
+              <Footer/>
             </>
           } exact />
           <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
