@@ -22,14 +22,15 @@ import { NavLink } from "react-router-dom";
 
 const NavBarCopy = () => {
   return (
-    <>
+    <div  className="navbar-container">
       <Flex
         maxW="100%"
         height="4rem"
         align="center"
         // justify="center"
         gap="2"
-        bg="black"
+        bg="#434344"
+        opacity="0.98"
       >
         {/* Agrego Logo*/}
         <Heading size="md" marginLeft="20px">
@@ -184,7 +185,7 @@ const NavBarCopy = () => {
           </Button>
         </NavLink>
       </Flex>
-    </>
+    </div>
   );
 };
 

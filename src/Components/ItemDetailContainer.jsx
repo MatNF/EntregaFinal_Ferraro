@@ -24,9 +24,9 @@ const ItemDetailContainer = () => {
   }, []);
 
   return (
-    <>
+    <div className="cuerpo-item-detail-container">
       <ItemDetail data={data} />
-    </>
+    </div>
   );
 };
 

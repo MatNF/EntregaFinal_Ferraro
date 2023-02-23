@@ -1,26 +1,24 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import HeroBanner from "./HeroBanner";
+import ItemListContainer from "./ItemListContainer";
+import FooterBanner from "./FooterBanner";
+import Footer from "./Footer";
+import NewCard from "./NewCard";
 
-import Navbar from './Navbar';
-import Footer from './Footer';
-
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <div className="layout">
-      <Head>
-        <title>JS Mastery Store</title>
-      </Head>
-      <header>
-        <Navbar />
-      </header>
-      <main className="main-container">
-        {children}
+      <main>
+        <HeroBanner />
+        <ItemListContainer />
+        {/* <NewCard/> */}
       </main>
       <footer>
+        <FooterBanner />
         <Footer />
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

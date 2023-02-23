@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./styles/ItemListContainer.css"; // Importa el archivo de estilos
 import ItemList from "./ItemList";
-import productsData from "./productsData.json";
 import { useParams } from "react-router-dom";
 import products from "./products.json"
 
@@ -27,13 +25,13 @@ const ItemListContainer = (props) => {
   );
 
   return (
-    <>
+    <div className="itemlist-container">
       {categoriaId ? (
         <ItemList items={catFilter} />
       ) : (
         <ItemList items={items} />
       )}
-    </>
+    </div>
   );
 };
 
