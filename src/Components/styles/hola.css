@@ -96,7 +96,8 @@
 }
 
 .counter {
-  border: 1px solid black;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  /* border: 1px solid black; */
   display: flex;
   width: 250px;
   height: 400px;
@@ -118,6 +119,7 @@
 
 .imagenProducto {
   /* border: 1px solid red; */
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,7 +353,7 @@
 }
 .hero-banner-image {
   position: absolute;
-  top: -8%;
+  top: -3%;
   right: 0%;
   max-width: 100%;
   width: 80%;
@@ -477,4 +479,54 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 100, "wght" 400, "GRAD" 20, "opsz" 48;
+}
+
+.cabecera-item {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heart-container {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /* background-color: #eee; */
+  position: absolute;
+  right: 14px;
+  top: 12px;
+}
+
+.favorite-button {
+  /* border: 1px solid gray; */
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.hearty {
+  cursor: pointer;
+  /* position: absolute;
+  right: 14px;
+  top: 12px; */
+  margin-top: 6px;
+  width: 80%;
+  height: auto;
 }

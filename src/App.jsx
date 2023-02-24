@@ -9,6 +9,7 @@ import NewCard from "./Components/NewCard";
 import FooterBanner from "./Components/FooterBanner";
 import Footer from "./Components/Footer";
 import Layout from "./Components/Layout";
+import FavoriteHeart from "./Components/FavoriteHeart";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             path="/categoria/:categoriaId"
             element={<ItemListContainer />}
           />
-          <Route path="/cart" element={<NewCard />} />
+          <Route path="/cart" element={<FavoriteHeart />} />
           <Route path="/detalle/:detalleId" element={<ItemDetailContainer />} />
         </Routes>
       </BrowserRouter>
