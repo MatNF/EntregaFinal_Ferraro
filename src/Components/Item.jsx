@@ -20,7 +20,7 @@ import FavoriteHeart from "./FavoriteHeart";
 const Item = ({ item }) => {
   return (
     <div className="counter">
-      <FavoriteHeart className='prueb'/>
+      <FavoriteHeart/>
       <div className="imagenProducto">
         <img src={item.pictureUrl} alt={item.title} />
       </div>
