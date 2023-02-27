@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 import "./styles/hola.css";
 
 const ItemDetail = ({ data }) => {
+  const [goToCart, setGoToCart] = useState(false);
+
   const onAdd = (quantity) => {
-    console.log(`agregaste ${quantity} unidades al carrito`);
+    setGoToCart(true);
   };
   //COMIENZA LA FUNCION
   return (
@@ -22,7 +25,11 @@ const ItemDetail = ({ data }) => {
             <p>${data.price}</p>
           </div>
           <h3>Cantidad</h3>
-          <ItemCount initial={1} stock={data.stock} onAdd={onAdd} />
+          {goToCart?
+          <Link to='/cart'> <button className="great-button">
+            Terminar compra
+            </button>
+            </Link>:<ItemCount initial={1} stock={data.stock} onAdd={onAdd} />}
         </div>
       </div>
     </>

@@ -496,11 +496,6 @@
 }
 
 .heart-container {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-.heart-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -529,4 +524,22 @@
   margin-top: 6px;
   width: 80%;
   height: auto;
+}
+
+.great-button {
+  border: 1px solid black;
+  margin-bottom: 1em;
+  /* margin-top: 1em; */
+  width: 120px;
+  height: 30px;
+  box-sizing: border-box;
+  font-size: 9pt;
+  border-color: #257dc1;
+  color: #257dc1;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.cuerpo-item-detail-container {
+  margin-top: 100px;
 }
