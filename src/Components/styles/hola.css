@@ -543,3 +543,26 @@
 .cuerpo-item-detail-container {
   margin-top: 100px;
 }
+
+.item-cart-container {
+  display: Flex;
+  flex-direction: row;
+}
+
+.item-cart-imagen {
+  max-width: 250px;
+}
+
+.item-cart-info-gral {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.cart-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

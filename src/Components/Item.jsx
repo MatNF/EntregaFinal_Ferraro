@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "@chakra-ui/react";
 import {
@@ -20,7 +20,7 @@ import FavoriteHeart from "./FavoriteHeart";
 const Item = ({ item }) => {
   return (
     <div className="counter">
-      <FavoriteHeart/>
+      <FavoriteHeart />
       <div className="imagenProducto">
         <img src={item.pictureUrl} alt={item.title} />
       </div>

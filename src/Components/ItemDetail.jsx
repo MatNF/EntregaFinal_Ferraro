@@ -31,7 +31,6 @@ const ItemDetail = ({ data }) => {
           <h3>Cantidad</h3>
           {goToCart ? (
             <Link to="/cart">
-              {" "}
               <button className="great-button">Terminar compra</button>
             </Link>
           ) : (
