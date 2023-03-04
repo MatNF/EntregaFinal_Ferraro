@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import NavBarCopy from "./Components/NavBar copy";
 import ItemListContainer from "./Components/ItemListContainer";
 import ItemDetailContainer from "./Components/ItemDetailContainer";
@@ -29,6 +29,6 @@ function App() {
       </BrowserRouter>
     </>
   );
-}
+} 
 
 export default App;
