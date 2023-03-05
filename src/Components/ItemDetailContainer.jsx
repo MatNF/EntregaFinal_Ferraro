@@ -1,27 +1,23 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-import productsData from "./productsData.json";
-import products from "./products.json"
+import products from "./products.json";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [data, setData] = useState({});
-
   const { detalleId } = useParams();
 
   useEffect(() => {
-    const getData = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(products);
-      }, 2000);
+    const db = getFirestore();
+    const oneItem = doc(db, "productos-apple", detalleId);
+    getDoc(oneItem).then((snapshot) => {
+      if (snapshot.exists()) {
+        const docs = snapshot.data();
+        setData(docs);
+      }
     });
-
-    getData.then((res) =>
-      setData(
-        res.find((products) => products.id === parseInt(detalleId))
-      )
-    );
-  }, []);
+  }, [detalleId]);
 
   return (
     <div className="cuerpo-item-detail-container">
