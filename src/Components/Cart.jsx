@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../context/CartContext";
 import ItemCart from "./ItemCart";
+import { collection, addDoc, getFirestore } from "firebase/firestore";
 
 const Cart = () => {
   const { cart, totalPrice } = useCartContext();
@@ -23,6 +24,9 @@ const Cart = () => {
         <ItemCart key={product.id} product={product} />
       ))}
       <p>Total price: {totalPrice()}</p>
+      <Link to={"/order-data"}>
+        <button>Realizar Pedido</button>
+      </Link>
     </div>
   );
 };

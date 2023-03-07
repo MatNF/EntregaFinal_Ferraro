@@ -6,6 +6,12 @@ import Cart from "./Components/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout";
 import CartProvider from "./context/CartContext";
+import SendOrder from "./Components/SendOrder";
+import { getStorage, ref, getDownloadURL } from 'firebase/storage'
+import CargaDeItems from "./Components/CargaDeItems";
+import TrueCart from "./Components/TrueCart";
+
+
 
 function App() {
   return (
@@ -19,7 +25,8 @@ function App() {
               path="/categoria/:categoriaId"
               element={<ItemListContainer />}
             />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart" element={<TrueCart />} />
+            <Route path="/order-data" element={<SendOrder/>}/>
             <Route
               path="/detalle/:detalleId"
               element={<ItemDetailContainer />}

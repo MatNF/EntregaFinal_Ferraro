@@ -16,6 +16,7 @@ const CartProvider = ({ children }) => {
 
   //Funcion para agregar items al carrito.
   const addItem = (item, quantity) => {
+    console.log(item.id)
     if (isInCart(item.id)) {
       setCart(
         cart.map((product) => {
@@ -24,12 +25,12 @@ const CartProvider = ({ children }) => {
             : product;
         })
       );
+      console.log('if')
     } else {
       setCart([...cart, { ...item, quantity }]);
+      console.log('else')
     }
   };
-
-  console.log("Carrito: ", cart);
 
   // Funcion para vaciar el carrito
   const clearCart = () => setCart([]);
@@ -41,6 +42,8 @@ const CartProvider = ({ children }) => {
   // Funcion para remover el item seleccionado a remover del carrito
   const removeItem = (id) =>
     setCart(cart.filter((product) => product.id !== id));
+
+    console.log("Carrito: ", cart);
 
   return (
     <CartContext.Provider

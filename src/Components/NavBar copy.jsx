@@ -72,24 +72,14 @@ const NavBarCopy = () => {
                 <span>iPad</span>
               </MenuItem>
             </NavLink>
-            <NavLink to={"/categoria/Mac"}>
+            <NavLink to={"/categoria/MacBook"}>
               <MenuItem minH="48px" color="black">
-                <span>Mac</span>
+                <span>MacBook</span>
               </MenuItem>
             </NavLink>
             <NavLink to={"/categoria/Watch"}>
               <MenuItem minH="48px" color="black">
                 <span>Watch</span>
-              </MenuItem>
-            </NavLink>
-            <NavLink to={"/categoria/EarPods"}>
-              <MenuItem minH="48px" color="black">
-                <span>EarPods</span>
-              </MenuItem>
-            </NavLink>
-            <NavLink to={"/categoria/HomePod"}>
-              <MenuItem minH="48px" color="black">
-                <span>HomePod</span>
               </MenuItem>
             </NavLink>
           </MenuList>

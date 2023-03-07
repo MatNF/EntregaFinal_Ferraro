@@ -3,7 +3,6 @@ import ItemCount from "./ItemCount";
 import { Link } from "react-router-dom";
 import "./styles/hola.css";
 import { useCartContext } from "../context/CartContext";
-import CartProvider from "../context/CartContext";
 
 const ItemDetail = ({ data }) => {
   const [goToCart, setGoToCart] = useState(false);
@@ -12,6 +11,7 @@ const ItemDetail = ({ data }) => {
   const onAdd = (quantity) => {
     setGoToCart(true);
     addItem(data, quantity);
+    console.log(data)
   };
   //COMIENZA LA FUNCION
   return (

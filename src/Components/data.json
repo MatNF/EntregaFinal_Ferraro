@@ -1,0 +1,122 @@
+[
+  {
+    "title": "iPhone 13 128GB Starlight",
+    "description": "Increíble iPhone 13 Starlight con 128GB de almacenamiento.",
+    "price": 799,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23766-large_default/iphone-13-128gb-starlight.jpg",
+    "category": "iPhone",
+    "stock": 5
+  },
+  {
+    "title": "iPhone 13 Pro 256GB Gold",
+    "description": "Impresionante iPhone 13 Pro en color oro con 256GB de almacenamiento.",
+    "price": 1199,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23853-large_default/iphone-13-pro-256gb-gold.jpg",
+    "category": "iPhone",
+    "stock": 3
+  },
+  {
+    "title": "iPhone 13 Pro 128GB Silver",
+    "description": "Elegante iPhone 13 Pro en color plata con 128GB de almacenamiento.",
+    "price": 1099,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23851-large_default/iphone-13-pro-128gb-silver.jpg",
+    "category": "iPhone",
+    "stock": 2
+  },
+  {
+    "title": "iPhone 13 Pro Max 256GB Graphite",
+    "description": "Poderoso iPhone 13 Pro Max en color grafito con 256GB de almacenamiento.",
+    "price": 1299,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23859-large_default/iphone-13-pro-max-256gb-graphite.jpg",
+    "category": "iPhone",
+    "stock": 4
+  },
+  {
+    "title": "Apple Watch Nike SE GPS + Cellular 40mm Silver",
+    "description": "Innovador Apple Watch Nike SE con GPS y celular en un elegante color plata con banda deportiva Nike en platino puro y negro.",
+    "price": 429,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23691-large_default/apple-watch-nike-se-gps-cellular-40mm-silver-aluminium-case-pure-platinum-black-nike-sport-band.jpg",
+    "category": "Watch",
+    "stock": 6
+  },
+  {
+    "title": "Apple Watch SE GPS 40mm Gold Aluminium",
+    "description": "Increíble Apple Watch SE con GPS en color oro con banda deportiva en color Starlight.",
+    "price": 329,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23685-large_default/apple-watch-se-gps-40mm-gold-aluminium-case-starlight-sport-band.jpg",
+    "category": "Watch",
+    "stock": 4
+  },
+  {
+    "title": "Apple Watch Series 7 GPS 41mm Midnight Aluminium",
+    "description": "El nuevo Apple Watch Series 7 con GPS en color medianoche con banda deportiva a juego.",
+    "price": 449,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23704-large_default/apple-watch-series-7-gps-41mm-midnight-aluminium-case-midnight-sport-band.jpg",
+    "category": "Watch",
+    "stock": 7
+  },
+  {
+    "title": "MacBook Air 13 M2 Chip 8 Core CPU 8 Core GPU 256GB Space Grey",
+    "description": "Increíble MacBook Air 13 con chip M2, CPU de 8 núcleos, GPU de 8 núcleos y 256GB de almacenamiento en un elegante color gris espacial.",
+    "price": 1199,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23829-large_default/macbook-air-13-m2-chip-8-core-cpu-8-core-gpu-256gb-space-grey.jpg",
+    "category": "MacBook",
+    "stock": 3
+  },
+  {
+    "title": "MacBook Pro 16 Apple M1 Pro Chip 10Core CPU 16Core GPU 1TB SSD Silver",
+    "description": "Poderoso MacBook Pro 16 con chip Apple M1 Pro, CPU de 10 núcleos, GPU de 16 núcleos, 1TB de almacenamiento SSD en un elegante color plateado.",
+    "price": 2599,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23842-large_default/macbook-pro-16-apple-m1-pro-chip-10core-cpu-16core-gpu-1tb-ssd-silver.jpg",
+    "category": "MacBook",
+    "stock": 2
+  },
+  {
+    "title": "MacBook Pro 16 Apple M1 Pro Chip 10Core CPU 16Core GPU 512GB SSD Space Grey",
+    "description": "Poderoso MacBook Pro 16 con chip Apple M1 Pro, CPU de 10 núcleos, GPU de 16 núcleos, 512GB de almacenamiento SSD en un elegante color gris espacial.",
+    "price": 2399,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23849-large_default/macbook-pro-16-apple-m1-pro-chip-10core-cpu-16core-gpu-512gb-ssd-space-grey.jpg",
+    "category": "MacBook",
+    "stock": 5
+  },
+  {
+    "title": "11-inch iPad Pro Wi-Fi 128GB Silver",
+    "description": "Increíble iPad Pro de 11 pulgadas con conectividad Wi-Fi, 128GB de almacenamiento y elegante color plateado.",
+    "price": 799,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23857-large_default/11-inch-ipad-pro-wi-fi-128gb-silver.jpg",
+    "category": "iPad",
+    "stock": 4
+  },
+  {
+    "title": "11-inch iPad Pro Wi-Fi + Cellular 128GB Space Grey",
+    "description": "Increíble iPad Pro de 11 pulgadas con conectividad Wi-Fi y celular, 128GB de almacenamiento y elegante color gris espacial.",
+    "price": 999,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23864-large_default/11-inch-ipad-pro-wi-fi-cellular-128gb-space-grey.jpg",
+    "category": "iPad",
+    "stock": 3
+  },
+  {
+    "title": "10.9-inch iPad Air Wi-Fi + Cellular 64GB Space Grey",
+    "description": "Fantástico iPad Air de 10.9 pulgadas con conectividad Wi-Fi y celular, 64GB de almacenamiento y elegante color gris espacial.",
+    "price": 749,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23871-large_default/10-9-inch-ipad-air-wi-fi-cellular-64gb-space-grey.jpg",
+    "category": "iPad",
+    "stock": 6
+  },
+  {
+    "title": "10.9-inch iPad Air Wi-Fi + Cellular 64GB Space Grey",
+    "description": "Fantástico iPad Air de 10.9 pulgadas con conectividad Wi-Fi y celular, 64GB de almacenamiento y elegante color gris espacial.",
+    "price": 749,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23871-large_default/10-9-inch-ipad-air-wi-fi-cellular-64gb-space-grey.jpg",
+    "category": "iPad",
+    "stock": 6
+  },
+  {
+    "title": "iPad 10.2 Wi-Fi 64GB 9na Gen Space Gray",
+    "description": "Increíble iPad de 10.2 pulgadas de 9na generación con conectividad Wi-Fi, 64GB de almacenamiento y elegante color gris espacial.",
+    "price": 329,
+    "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23878-large_default/ipad-102-wi-fi-64gb-9na-gen-space-gray.jpg",
+    "category": "iPad",
+    "stock": 8
+  }
+]
