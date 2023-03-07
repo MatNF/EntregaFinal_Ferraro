@@ -9,7 +9,7 @@ import {
 import { useCartContext } from "../context/CartContext";
 
 const SendOrder = () => {
-  const { cart, totalPrice } = useCartContext();
+  const { cart, totalPrice, clearCart } = useCartContext();
 
   const [orderId, setOrderId] = useState(null);
   const [name, setName] = useState("");
@@ -79,6 +79,7 @@ const SendOrder = () => {
         />
         <button
           type="submit"
+          onClick={() => clearCart()}
           style={{
             padding: "10px",
             border: "1px solid #ccc",

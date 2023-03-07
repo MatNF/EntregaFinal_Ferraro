@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../context/CartContext";
-import ItemCart from "./ItemCart";
-import { collection, addDoc, getFirestore } from "firebase/firestore";
+import CartItem from "./CartItem";
+import OrderSummary from "./OrderSummary";
 
 const Cart = () => {
-  const { cart, totalPrice } = useCartContext();
+  const { cart, totalPrice, totalProducts } = useCartContext();
 
   if (cart.length === 0) {
     return (
@@ -20,24 +20,19 @@ const Cart = () => {
 
   return (
     <div className="cart-container">
-      {cart.map((product) => (
-        <ItemCart key={product.id} product={product} />
-      ))}
-      <p>Total price: {totalPrice()}</p>
-      <Link to={"/order-data"}>
-        <button>Realizar Pedido</button>
-      </Link>
+      <h1 className="ache1">Shopping Cart - ({totalProducts()} items)</h1>
+      <div className="dispo-cart-container">
+        <div className="datos-carrito">
+          {cart.map((product) => (
+            <CartItem key={product.id} product={product} />
+          ))}
+        </div>
+        <div className="datos-summary">
+          <OrderSummary price={totalPrice()} />
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Cart;
-// {
-//       "id": 1,
-//       "title": "iPhone 13 256GB -Starlight",
-//       "description": "Stunning Starlight iPhone 13 with 256GB storage.",
-//       "price": 999,
-//       "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23766-large_default/iphone-13-128gb-starlight.jpg",
-//       "category": "iPhone",
-//       "stock": 4
-//     },
