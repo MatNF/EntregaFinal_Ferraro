@@ -6,10 +6,8 @@ import Cart from "./Components/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout";
 import CartProvider from "./context/CartContext";
-import SendOrder from "./Components/SendOrder";
-import Checkout from "./Components/Checkout";
-
-
+import CheckoutForm from "./Components/CheckoutForm";
+import OrderConfirmation from "./Components/OrderConfirmation";
 
 function App() {
   return (
@@ -24,7 +22,8 @@ function App() {
               element={<ItemListContainer />}
             />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/order-data" element={<SendOrder/>}/>
+            <Route path="/order-data" element={<CheckoutForm />} />
+            <Route path="/order-confirmation" element={<OrderConfirmation />} />
             <Route
               path="/detalle/:detalleId"
               element={<ItemDetailContainer />}
@@ -34,6 +33,6 @@ function App() {
       </BrowserRouter>
     </>
   );
-} 
+}
 
 export default App;
