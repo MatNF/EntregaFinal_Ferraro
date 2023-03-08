@@ -11,7 +11,6 @@ const ItemDetail = ({ data }) => {
   const onAdd = (quantity) => {
     setGoToCart(true);
     addItem(data, quantity);
-    console.log(data)
   };
   
   return (

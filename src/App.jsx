@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout";
 import CartProvider from "./context/CartContext";
 import CheckoutForm from "./Components/CheckoutForm";
-import OrderConfirmation from "./Components/OrderConfirmation";
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
             />
             <Route path="/cart" element={<Cart />} />
             <Route path="/order-data" element={<CheckoutForm />} />
-            <Route path="/order-confirmation" element={<OrderConfirmation />} />
             <Route
               path="/detalle/:detalleId"
               element={<ItemDetailContainer />}
