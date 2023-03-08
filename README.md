@@ -12,7 +12,6 @@ Web ecommerce diseñado para aquellos fans del mundo Aplle. En este ecommerce se
 | Página | Link |
 | ------------- |:-------------:|
 | GitHub  | https://github.com/MatNF/EntregaFinal_Ferraro.git   |
-| Firebase  | console.firebase.google.com   |
 
 ## Muestra de la navegabilidad del Sitio
 
