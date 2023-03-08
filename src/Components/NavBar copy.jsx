@@ -15,7 +15,6 @@ import {
   MenuList,
   MenuItem,
 } from "@chakra-ui/react";
-import Logo from "../assets/paw.png";
 import appleangel from "../assets/appleAngel.png";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
@@ -27,7 +26,6 @@ const NavBarCopy = () => {
         maxW="100%"
         height="4rem"
         align="center"
-        // justify="center"
         gap="2"
         bg="#434344"
         opacity="0.98"
@@ -160,18 +158,13 @@ const NavBarCopy = () => {
           <Button
             rounded="11"
             color="white"
-            // marginLeft="10px"
             marginRight="10px"
-            // bg="#0088a9"
             variant="ghost"
             variantcolor="#0088a9"
             _hover={{ bg: "#4faabf" }}
             size="md"
-            // height="2em"
-            // width="5em"
           >
             <CartWidget />
-            {/* Cart */}
           </Button>
         </NavLink>
       </Flex>

@@ -24,12 +24,3 @@ const ItemCart = ({ product }) => {
 };
 
 export default ItemCart;
-// {
-//       "id": 1,
-//       "title": "iPhone 13 256GB -Starlight",
-//       "description": "Stunning Starlight iPhone 13 with 256GB storage.",
-//       "price": 999,
-//       "pictureUrl": "https://cdn-ipoint.waugi.com.ar/23766-large_default/iphone-13-128gb-starlight.jpg",
-//       "category": "iPhone",
-//       "stock": 4
-//     },

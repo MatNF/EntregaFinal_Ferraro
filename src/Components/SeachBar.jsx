@@ -3,7 +3,6 @@ import {
   Input,
   InputGroup,
   InputRightElement,
-  InputLeftElement,
 } from "@chakra-ui/react";
 import React from "react";
 

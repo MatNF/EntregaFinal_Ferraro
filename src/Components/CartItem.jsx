@@ -9,8 +9,6 @@ const CartItem = ({ product }) => {
 const { removeItem } = useCartContext();
 
   return (
-    // <div className="cart-container">
-    //   <h1 className="ache1">Shopping Cart</h1>
     <div className="product-cart">
       <div className="product-cart-box img-cart">
         <img src={product.pictureUrl} alt="Ipad" />
@@ -47,7 +45,6 @@ const { removeItem } = useCartContext();
           />
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

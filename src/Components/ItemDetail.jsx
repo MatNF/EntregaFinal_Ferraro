@@ -13,7 +13,7 @@ const ItemDetail = ({ data }) => {
     addItem(data, quantity);
     console.log(data)
   };
-  //COMIENZA LA FUNCION
+  
   return (
     <>
       <div className="container">

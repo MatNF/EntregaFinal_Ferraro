@@ -3,7 +3,6 @@ import HeroBanner from "./HeroBanner";
 import ItemListContainer from "./ItemListContainer";
 import FooterBanner from "./FooterBanner";
 import Footer from "./Footer";
-import NewCard from "./NewCard";
 
 const Layout = () => {
   return (
@@ -11,7 +10,6 @@ const Layout = () => {
       <main>
         <HeroBanner />
         <ItemListContainer />
-        {/* <NewCard/> */}
       </main>
       <footer>
         <FooterBanner />
